@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- Import -->
+    <link rel="stylesheet2" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://kit.fontawesome.com/d02c8a8a14.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <meta property="og:title" content="Neonite" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:image" content="https://preview.daneric.dev/neonite/images/LogoTransparent.png" />
+    <meta property="og:description" content="Neonite Private Server" />
+    <meta name="theme-color" content="#a74fff">
+    <link rel="shortcut icon" href="images/Neonite2.png"/>
+    <meta charset="utf-8">
+    <title>Home - Neonite</title>
+  </head>
+  <body onload="typeWriter()">
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar-module links">
+          <img class="neonite-logo" src="images/LogoTransparent.png"></img>
+          <a href="./" class="link boldfont">Home</a>
+          <a href="./tutorials.html" class="active link boldfont">Tutorials</a>
+          <a href="https://discord.gg/4R4v3yuraz" class="link boldfont">Download</a>
+        </ul>
+        <ul class="navbar-module navbar-socials">
+          <li><a href="https://discord.gg/4R4v3yuraz" class="navbar-item"><i class="fab fa-discord"></i></a></li>
+        </ul>
+      </nav>
+<div class="tommy">
+      <main>
+        <div class="intro">
+          <h1 class="intro-header"><img class="neonite-header" src="images/neonite.png"/></h1>
+          <h2>
+            <a class="intro-description">Tutorials
+            </a>
+          </h2>
+        </div>
+      </div>
+      </br>
+      <div class="text-center">
+        <div class="row mt--7">
+          <div class="col-lg-12">
+            <div class="about-me">
+              <div class="about-me tutorial-thumb-left wow">
+                <img class="right-picture wow" style="border-radius: 10px;" width="500" src="https://i.ytimg.com/vi/TnoiDk1EsFk/maxresdefault.jpg" alt="Daneric">
+              </div>
+              <div style="" class="col-6">
+                  <h3 class="center-text tommy" style="text-align: center !important; font-weight: 300 !important;"><a class="cuba" style="color: #a74fff !important;" href="https://www.youtube.com/watch?v=TnoiDk1EsFk">How to use Neonite++</a><br><br>HOW TO USE NEONITE++ | FORTNITE IN-GAME PRIVATE SERVER<br><br><br><br><br><br></h3>
+              </div>
+        </div>
+            <div class="about-me">
+                <div style="" class="col-6">
+                    <h3 class="center-text tommy" style="text-align: center !important; font-weight: 300 !important;"><a class="cuba" style="color: #a74fff !important;" href="https://www.youtube.com/watch?v=Y36dv9TcERQ">Travis Scott Event</a><br><br>How to watch TRAVIS SCOTT EVENT as THANOS IN NEONITE++<br><br><br><br><br><br></h3>
+                </div>
+            <div class="about-me tutorial-thumb wow">
+              <img class="right-picture wow" style="border-radius: 10px;" width="500" src="https://i.ytimg.com/vi/Y36dv9TcERQ/maxresdefault.jpg" alt="Daneric">
+            </div>
+          </div>
+          <div class="about-me">
+            <div class="about-me tutorial-thumb-left wow">
+              <img class="right-picture wow" style="border-radius: 10px;" width="500" src="https://i.ytimg.com/vi/k_QgAPFnDbs/maxresdefault.jpg" alt="Daneric">
+            </div>
+            <div style="" class="col-6">
+                <h3 class="center-text tommy" style="text-align: center !important; font-weight: 300 !important;"><a class="cuba" style="color: #a74fff !important;" href="https://www.youtube.com/watch?v=k_QgAPFnDbs">How to play as Thanos</a><br><br>How to PLAY AS THANOS using NEONITE++! (unreleased modes, unreleased weapons)<br><br><br><br><br><br></h3>
+            </div>
+      </div>
+       </div>
+      </div>
+    </div>
+    </br>
+  </br>
+
+    <div class="container second-main">
+      <main>
+        <h1copy class="copyright-text cuba">Copyright © Neonite 2021 | Website made with ❤️ by <a class="credits" href="https://daneric.dev/">Daneric</a></h1copy>
+      </main>
+    </div>
+  </body>
+<script>
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+</script>
+</html>
