@@ -6,7 +6,6 @@
   <p align="center">
     The source code of <a href="https://neonitedev.github.io/?source=GithubPage-readme">neonitedev.github.io</a>
 	<br />
-	<a href="https://neonitedev.github.io/?source=GithubPage-readme">ᗒ Official Website ᗕ</a>
   </p>
 </p>
 <br />
