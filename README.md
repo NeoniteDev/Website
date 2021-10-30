@@ -9,7 +9,8 @@
 	<a href="https://neonitedev.github.io/?source=GithubPage-readme">ᗒ Official Website ᗕ</a>
   </p>
 </p>
+<br />
+<p align="center">
+    Website made by Daneric
+</p>
 
-The source code of [NeoniteDev.github.io](https://neonitedev.github.io)
-
-Website made by Daneric
