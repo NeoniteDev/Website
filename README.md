@@ -1,4 +1,14 @@
-# NeoniteDev.github.io
+<p align="center">
+  <a href="https://github.com/NeoniteDev/neonitedev.github.io">
+    <img src="http://neonitedev.github.io/images/neonite.png" alt="Logo" width="216" height="127">
+  </a>
+
+  <p align="center">
+    The source code of <a href="https://neonitedev.github.io/?source=GithubPage-readme">neonitedev.github.io</a>
+	<br />
+	<a href="https://neonitedev.github.io/?source=GithubPage-readme">ᗒ Official Website ᗕ</a>
+  </p>
+</p>
 
 The source code of [NeoniteDev.github.io](https://neonitedev.github.io)
 
